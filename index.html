@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping-Cart</title>
+
+    <!-- Bootstrap Stylesheets -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div
+      class="
+        container
+        d-flex
+        justify-content-center
+        align-items-center
+        main-content
+        flex-column
+      "
+    >
+      <h1 class="mb-5 text-capitalize mt-4">My shopping cart</h1>
+      <div class="cart">
+        <div class="row cart-inner">
+          <div
+            class="cart-item d-flex justify-content-center align-items-center"
+          >
+            <div
+              class="
+                col-lg-8
+                w-50
+                m-auto
+                d-flex
+                justify-content-start
+                align-items-center
+                left-side-cart
+              "
+            >
+              <img src="img/product-1.png" alt="img" class="img-cart me-4" />
+              <h5 class="ms-4">iPhone 11 128GB Black</h5>
+            </div>
+            <div
+              class="
+                col-lg-4
+                w-50
+                right-side-cart
+                d-flex
+                justify-content-center
+                align-items-center
+              "
+            >
+              <div
+                class="
+                  clac-cart
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                  me-5
+                "
+              >
+                <button class="btn phone-plus-btn">+</button>
+                <input
+                  type="number"
+                  value="0"
+                  class="phone-input input-number"
+                />
+                <button class="btn phone-minus-btn">-</button>
+              </div>
+
+              <h4 class="me-5">$<span class="phone-total">0</span></h4>
+              <div class="cross-btn">
+                <img src="img/remove.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row cart-inner">
+          <div
+            class="cart-item d-flex justify-content-center align-items-center"
+          >
+            <div
+              class="
+                col-lg-8
+                w-50
+                m-auto
+                d-flex
+                justify-content-start
+                align-items-center
+                left-side-cart
+              "
+            >
+              <img src="img/product-2.png" alt="img" class="img-cart me-4" />
+              <h5 class="ms-4 w-75">iPhone 11 Silicone Case - Black</h5>
+            </div>
+            <div
+              class="
+                col-lg-4
+                w-50
+                right-side-cart
+                d-flex
+                justify-content-center
+                align-items-center
+              "
+            >
+              <div
+                class="
+                  clac-cart
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                  me-5
+                "
+              >
+                <button class="btn case-plus-btn">+</button>
+                <input
+                  type="number"
+                  value="0"
+                  class="case-input input-number"
+                />
+                <button class="btn case-minus-btn">-</button>
+              </div>
+
+              <h4 class="me-5">$<span class="case-total">0</span></h4>
+              <div class="cross-btn">
+                <img src="img/remove.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row cart-inner">
+          <div
+            class="
+              cart-item
+              d-flex
+              justify-content-center
+              align-items-center align-items-center
+            "
+          >
+            <div class="col-lg-10 d-flex flex-column justify-content-between">
+              <h3>Subtotal:</h3>
+              <h3>Tax:</h3>
+              <h3>Total:</h3>
+            </div>
+            <div
+              class="
+                col-lg-2
+                d-flex
+                justify-content-between
+                flex-column
+                align-items-center
+              "
+            >
+              <h3>$ <span class="sub-total">0</span></h3>
+              <h3>$ <span class="tax">0</span></h3>
+              <h3>$ <span class="total">0</span></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
